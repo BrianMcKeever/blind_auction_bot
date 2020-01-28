@@ -1,0 +1,5 @@
+environment
+*.swp
+*.db
+secret.py
+roster.txt
