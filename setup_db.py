@@ -10,6 +10,8 @@ for line in f:
     values = line.split("\t")
     name = values[0].strip()
     rank = values[3].strip()
+    if rank != "Alt":
+        rank = "Main"
     print(name, rank)
 
     connection.execute('insert into user values (?, ?, ?)', (name, rank, None))
